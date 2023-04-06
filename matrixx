@@ -1,0 +1,55 @@
+import java.io.*;
+import java.util.*;
+class samba
+{
+    public static void main(String args[])
+    {
+        int mat1[][];mat2[][];res[][];
+        Scannner sc=new Scanner(System.in);
+        system.out.println("enter no of rows in matrix 1:");
+        int row1=sc.nextInt();
+        system.out.println("enter no of rows in matrix 1:");
+        int col1=sc.nextInt();
+        system.out.println("enter no of rows in matrix 1:");
+        int row2=sc.nextInt();
+        system.out.println("enter no of rows in matrix 1:");
+        int col2=sc.nextInt();
+        if(col1!=row2)
+        {
+            System.out.println("not valid");
+        }
+        else
+        {
+            int mat1[][] = new int[row1][col1];
+            int mat2[][] = new int[row2][col2];
+            int res[][] = new int[row1][col2];
+            for(int i=0;i<=row1;i++)
+            {
+                for(int j=0;j<=col1;i++)
+                {
+                    mat1[i][j]=nextInt();
+                }
+            }
+            for(int i=0;i<=row2;i++)
+            {
+                for(int j=0;j<=col2;i++)
+                {
+                    mat2[i][j]=nextInt();
+                }
+            }
+
+            for(i=0;i<=row1;i++)
+            {
+                for(j=0;j<=col2;j++)
+            {
+                for(int k = 0; k < col1; k++)
+                {
+                    res[i][j]=res[i][j]+mat1[i][k]*mat2[k][j];
+                }
+                System.out.println(res[i][j]);
+            }
+
+            }
+        }
+    }
+}
